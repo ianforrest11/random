@@ -2,11 +2,15 @@ import json
 import requests
 import time
 
+# link to corey schafer video vvvv
+# https://www.youtube.com/watch?v=1lxrb_ezP-g
+
+
 r = requests.get('https://formulae.brew.sh/api/formula.json')
 packages_json = r.json()
 
 
-
+# create empty list of results, to be populated by 'for' loop
 results = []
 
 t1 = time.perf_counter()
